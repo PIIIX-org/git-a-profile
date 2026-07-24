@@ -1,48 +1,63 @@
 # Loop 2 — Design
 
-**Goal:** build the custom asset kit for the approved concept. Every asset is your
-own committed SVG. No badge services (`PRINCIPLES.md §1`).
+**Goal:** build the custom asset kit for the approved concept — reinvented for this
+subject, not reused from any prior run. Every asset is your own committed SVG (or
+native mermaid for diagrams). No badge services (`PRINCIPLES.md §6`).
 
-**Input:** approved `RESEARCH.md` (concept + palette).
+**Input:** approved `RESEARCH.md` (vibe + concept + palette + diagram opt-ins).
 
-**Output:** `assets/` full of SVGs, each previewed, ready for the README.
+**Output:** `assets/` full of SVGs (+ any mermaid), each previewed, ready for the README.
 
 ---
 
+## The rule that governs this whole loop
+
+**Reinvent every component (`PRINCIPLES.md §3`).** The reference assets in this repo
+are technique, not a template. Do not reach for the monospace pill badge or the
+folder-tree repo list by reflex. Invent *this subject's* badge idea and *this
+subject's* way of showing repositories. If it looks like a previous run, redo it.
+Creativity is the floor here, not a bonus (`§1–2`).
+
 ## The asset kit
 
-Build these, in the approved palette, in a consistent type system (a monospace
-family reads well and renders everywhere):
+Build these in the approved palette and vibe, in a consistent type system:
 
-1. **Signature hero** — the unique concept as an animated SVG.
-2. **Badge system** — role/affiliation badges and a tech-stack row, each a small
-   pill SVG with the real logo embedded and the brand/tech color as background.
-3. **Activity / showcase viz** — for a person, the real contribution data as a
-   custom graphic; for an org/project, a real showcase.
-4. **Footer** — a slim closing strip that echoes the hero.
+1. **Signature hero** — the approved unique concept, as an animated SVG.
+2. **Badge / tag system** — reinvented for this subject. Maybe it's not pills at
+   all. Whatever it is, it carries real logos and the right colors, and it's *this
+   profile's* idea of a tag.
+3. **Repository / showcase visual** — reinvented. Folders were one past idea; find
+   the one that fits this subject (a map, a shelf, a deck, a timeline, a
+   constellation…).
+4. **Activity / showcase viz** — real data (person) or real showcase (org/project),
+   reimagined per the concept.
+5. **Diagrams the human opted into** — architecture, data flow, module tree, etc.
+   Native mermaid (` ```mermaid `) renders on GitHub with zero assets; use a custom
+   SVG when you want full control. Only build ones that earn their place.
+6. **Footer** — a closing note that echoes the hero.
 
-## How to build each
+## Before you build each — offer options (`PRINCIPLES.md §4`)
 
-- **Write SVG directly** (Python/JS/whatever). Keep viewBox tidy; use relative
-  units so it scales to `width="100%"`.
-- **Logos:** pull real marks from the subject's avatar (sample + embed as a
-  clipped `<image>`) or from open icon sets (e.g. simple-icons) for tech logos —
-  extract the `<path>` and fill it in your contrast color. Redraw a simple mark
-  (e.g. a monogram) when no logo exists.
-- **Animation — two ways, both render inside an `<img>` on GitHub:**
-  - **SMIL** (`<animate>`, `<animateMotion>`) for orbits, twinkles, motion paths.
-  - **CSS `<style>`** with `@keyframes` for pulses/loops — and this is the only
-    way to honor reduced motion:
-    ```
-    @media (prefers-reduced-motion: reduce) { .anim { animation: none !important; } }
-    ```
-    Use CSS whenever the asset moves and a static fallback matters.
-- **Contrast:** white text on saturated fills, dark text on light fills (yellow,
-  cyan). Check body text ≥ 4.5:1.
+For the components with real design freedom (badges, repo visual), it's fair to
+sketch 2 quick directions and let the human pick at Gate B, rather than committing
+to the first. Bring ideas, not one default.
+
+## How to build
+
+- **Write SVG directly.** Tidy viewBox, relative units, `width="100%"` friendly.
+- **Logos:** embed the subject's real mark (sample + clip an `<image>`), or pull a
+  tech logo's `<path>` from an open icon set and recolor it; redraw a simple mark
+  when none exists.
+- **Animation** renders inside an `<img>` on GitHub: SMIL for motion paths; CSS
+  `<style>` `@keyframes` when you need the reduced-motion gate:
+  `@media (prefers-reduced-motion: reduce){ .anim{ animation:none !important } }`.
+- **Mermaid diagrams** go straight in the README as fenced blocks — theme them to
+  the palette where the renderer allows.
+- **Contrast:** white text on saturated fills, dark on light; body ≥ 4.5:1.
 
 ## Preview every asset
 
-Render each SVG to PNG and look at it before moving on:
+Render each SVG to PNG and look at it:
 
 ```bash
 qlmanage -t -s 900 -o . asset.svg      # macOS
@@ -50,16 +65,16 @@ rsvg-convert asset.svg -o asset.png    # librsvg
 resvg asset.svg asset.png              # resvg
 ```
 
-If you have no renderer, describe each asset precisely and rely on Gate B (a
-human opens the SVGs). Fix anything that clips, misaligns, or reads wrong.
+For mermaid, preview in any markdown viewer that renders it (or `mmdc`). No
+renderer? Describe each asset precisely and rely on Gate B. Fix anything that
+clips, misaligns, or reads wrong.
 
 ## Commit the assets
 
-Put them under `assets/` (or `profile/assets/` for an org's `.github`). You'll
-reference them by raw URL in Loop 3.
+Under `assets/` (or `profile/assets/` for an org `.github`).
 
 > ## Gate B — human decision
 >
-> Show the human the **preview images** of the hero, badges, and activity viz.
-> Ask them to approve the visual direction (or call specific changes) before you
-> assemble the README. Iterate here — it's cheap. Do not proceed without approval.
+> Show the **preview images** (and any option sketches). Confirm the visual
+> direction reads as intended — and that it doesn't look like a prior run. Iterate
+> here; it's cheap. Do not assemble the README without approval.

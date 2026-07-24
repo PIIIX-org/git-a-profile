@@ -10,7 +10,18 @@ order, dispatch worker agents for the heavy lifting, and **hold the three human
 gates**. You do not auto-publish; the gates are real stops.
 
 Read [`PRINCIPLES.md`](../../PRINCIPLES.md) before anything else — those rules are
-binding. The loop files are in [`../../loops/`](../../loops).
+binding. Four of them govern *how you think*, and they are hard rules at every
+step, not just at the start:
+
+- **§0 Intake first** — capture the vibe/feeling, must-haves, and explicit do-nots
+  (invite reference uploads) before you design anything.
+- **§1 Creativity is the baseline** — the obvious choice is the failure mode, everywhere.
+- **§2 Think out of the box** — the floor, not the ceiling.
+- **§3 Reinvent every component** — never reuse the example badge or repo-tree; invent this subject's own.
+- **§4 Offer ideas** — bring 2–3 out-of-the-box options to every gate; propose things they didn't ask for.
+- **§5 Chart what deserves it** — offer diagrams when the repo has real structure.
+
+The loop files are in [`../../loops/`](../../loops).
 
 ## Get the target
 
@@ -32,14 +43,20 @@ Create a todo per loop and work them in order.
    install it via `find-skills` or the marketplace.
 
 2. **Loop 1 — Research** ([`loops/01-research.md`](../../loops/01-research.md)).
-   Dispatch the **`profile-researcher`** agent to pull real data, sample the brand
-   color, and propose the one unique concept. It returns a `RESEARCH.md`.
-   → **Gate A:** present identity + palette + concept to the human. Get approval.
+   **Run intake first** (vibe, must-haves, do-nots — accept uploaded references).
+   Then dispatch the **`profile-researcher`** agent to pull real data, sample the
+   brand color, look for chartable structure, and propose **2–3** unique concepts,
+   each with a fresh badge idea and repo-visualization idea. It returns `RESEARCH.md`.
+   → **Gate A:** present the vibe, palette, concept options, and diagram candidates.
+   Bring options, not one answer. Let the human pick and opt diagrams in/out.
 
 3. **Loop 2 — Design** ([`loops/02-design.md`](../../loops/02-design.md)).
-   Fan out **`asset-forger`** agents — one per asset (hero, badges, activity viz,
-   footer) — each building its SVG and rendering a preview. Custom SVGs only.
-   → **Gate B:** show the previews. Get approval; iterate here, it's cheap.
+   Fan out **`asset-forger`** agents — one per asset (hero, badges, repo/showcase
+   visual, activity viz, footer) — each building its SVG and rendering a preview.
+   **Reinvent every component (`§3`)** — never default to the example pill badge or
+   folder-tree; invent this subject's own. Build any opted-in diagrams (native
+   mermaid or custom SVG).
+   → **Gate B:** show the previews and option sketches. Get approval; iterate.
 
 4. **Loop 3 — Build** ([`loops/03-build.md`](../../loops/03-build.md)).
    Assemble the README (file-tree repos, badge rows, hero). Run the `stop-slop`
@@ -53,7 +70,10 @@ Create a todo per loop and work them in order.
 
 ## Rules you enforce at every step
 
+- Creativity and out-of-the-box thinking are hard rules at every point (`§1–2`).
+- Reinvent every component; never ship a prior run's design (`§3`).
 - Custom committed SVGs, never badge services as the backbone.
+- Honor the intake: the vibe, the must-haves, and every explicit do-not.
 - One unique signature per subject; run the category-reflex check.
 - Real data and sampled colors only — nothing fabricated.
 - Accessible: alt text + `prefers-reduced-motion` on animation.

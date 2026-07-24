@@ -18,13 +18,19 @@ Execute the five loops in order. Each is a file under `loops/`. Stop at the huma
 gates — they are real stops, not formalities.
 
 1. **`loops/00-bootstrap.md`** — ready your capabilities (install/borrow/fallback). Actively search your own platform's registry for tools you lack.
-2. **`loops/01-research.md`** — pull real data, sample the brand color, propose the one unique concept. → **Gate A** (human approves concept + palette).
-3. **`loops/02-design.md`** — build the custom asset kit as your own committed SVGs. → **Gate B** (human approves the visuals).
-4. **`loops/03-build.md`** — assemble the README, write anti-slop prose, push to the target under the right identity. → **Gate C** (human approves before/at go-live).
-5. **`loops/04-verify.md`** — screenshot the live page, run the checklist, commit a report under `runs/`.
+2. **Intake (start of `loops/01`)** — ask the human for the *vibe/feeling* they want (accept uploaded references), their must-haves, and explicit do-nots. This shapes everything.
+3. **`loops/01-research.md`** — pull real data, sample the brand color, find chartable structure, and propose **2-3** unique concepts (each with a fresh badge idea and repo-visualization idea). → **Gate A** (human picks concept + palette, opts diagrams in/out).
+4. **`loops/02-design.md`** — build the custom asset kit as your own committed SVGs, **reinventing every component** (no default pills or folders), plus any opted-in diagrams. → **Gate B** (human approves the visuals).
+5. **`loops/03-build.md`** — assemble the README, write anti-slop prose, push to the target under the right identity. → **Gate C** (human approves before/at go-live).
+6. **`loops/04-verify.md`** — screenshot the live page, run the checklist, commit a report under `runs/`.
 
 ## The non-negotiables (full list in `PRINCIPLES.md`)
 
+- **Intake first:** capture the vibe/feeling, must-haves, and explicit do-nots (accept uploads) before designing.
+- **Creativity and out-of-the-box thinking are hard rules at every point** — the obvious choice is the failure mode.
+- **Reinvent every component every run** — badges, repo visuals, headers; never reuse a prior design.
+- **Offer 2-3 ideas the human didn't ask for** at each gate; propose, don't just execute.
+- **Offer diagrams** (mermaid or custom SVG) when the subject has real structure.
 - Custom SVGs you commit — never badge services as the visual backbone.
 - One unique signature per subject; if it's guessable from the category, redo it.
 - Brand color sampled from their real logo/site; real data only.

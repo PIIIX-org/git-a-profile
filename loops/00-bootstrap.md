@@ -18,7 +18,8 @@ not *what* you need.
 
 ## Step 2 — The capability checklist
 
-You need these eight capabilities. For each: check if you already have it, else
+You need these capabilities (the first eight always; the ninth when the subject
+has structure worth charting). For each: check if you already have it, else
 install it, else use the fallback.
 
 | # | Capability | What it's for |
@@ -31,6 +32,7 @@ install it, else use the fallback.
 | 6 | **Sample colors from an image** | Pull brand color from a logo/screenshot |
 | 7 | **Screenshot a live web page** | Verify the rendered GitHub page |
 | 8 | **Anti-slop writing guidance** | Keep the prose human (see `PRINCIPLES.md`) |
+| 9 | **Diagram rendering (optional)** | Turn repo structure into charts — native mermaid needs nothing; a custom chart needs an SVG renderer |
 
 ## Step 3 — Self-discovery: find and install what you're missing
 
@@ -80,8 +82,7 @@ another person, confirm you have *their* authenticated identity (see
 
 ## Step 6 — Write the bootstrap report
 
-List each of the eight capabilities as `native` / `installed` / `fallback`, note
-your platform, and note which identity you're authenticated as. Then proceed to
-Loop 1.
+List each capability as `native` / `installed` / `fallback`, note your platform,
+and note which identity you're authenticated as. Then proceed to Loop 1.
 
 > **Gate:** none. Bootstrap is machine setup. The first human gate is in Loop 1.

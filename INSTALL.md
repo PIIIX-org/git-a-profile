@@ -34,6 +34,7 @@ install with `npm`/`pip`/your package manager:
 | Sample colors | Python `Pillow` · `imagemagick` |
 | Screenshot pages | `playwright` · `puppeteer` · headless Chrome |
 | Anti-slop writing | the checklist in `loops/03-build.md` |
+| Diagrams | native **mermaid** (no install) · `mermaid-cli` · a custom SVG chart · Claude `diagram-design` skill |
 
 ## Self-discovery
 

@@ -30,6 +30,12 @@ substitute for the others in its group.
 - **simple-icons** — open brand SVGs; extract the `<path>` and recolor.
   (Note: some marks are removed for trademark reasons — redraw a simple mark then.)
 
+## Diagrams & charts
+- **Native mermaid** — GitHub renders ` ```mermaid ` fenced blocks with zero assets. First choice for architecture / flow / sequence / ER / state.
+- **`mermaid-cli` (`mmdc`)** — render mermaid to SVG/PNG when you want a file.
+- **Custom SVG chart** — write it yourself for full control of look and motion.
+- Claude Code: the `diagram-design` / `diagram` skills.
+
 ## Writing quality
 - Claude Code: `stop-slop`, `copywriting`, `copy-editing`, `ogilvy`.
 - Everywhere: the checklist in `loops/03-build.md` — same rules, by hand.

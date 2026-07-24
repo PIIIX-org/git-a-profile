@@ -49,15 +49,24 @@ going generic: **[`PRINCIPLES.md`](./PRINCIPLES.md)**
 
 ## What makes it not generic
 
-- **Custom SVGs, not badge services.** Every asset is your own committed file, so
-  it never looks templated and never rots when a free host goes down.
-- **One unique signature per subject, never reused.** If the concept is guessable
-  from the category alone, the pipeline makes you redo it.
-- **Brand color sampled from reality** — pulled from their actual logo or site.
-- **Real data only** — contribution graphs from the GitHub GraphQL API; nothing
-  fabricated.
-- **Anti-slop prose**, **accessible by default** (alt text, `prefers-reduced-motion`),
-  and **verified live** with a real screenshot.
+- **It asks how you want it to *feel* first.** Before any design, it captures your
+  vibe, your must-haves, your explicit do-nots — and takes reference images you
+  upload. Feel is an input, not an afterthought.
+- **Creativity and out-of-the-box thinking are hard rules at every step.** The
+  obvious choice is treated as the failure mode. It reaches for the idea you
+  wouldn't have asked for — the way your repos became openable folders, a
+  contribution graph became a star map, a name's meaning became an orbital system.
+- **It reinvents every component every run.** The badge design, the way repos are
+  shown, the header — none are reused. If the output could be pattern-matched to a
+  previous profile, the pipeline makes it redo it.
+- **It proposes, doesn't just execute.** Options at every gate; ideas you didn't
+  request.
+- **It charts what deserves charting** — offers architecture / flow / data diagrams
+  (native mermaid or custom SVG) when the repo has real structure.
+- **Custom SVGs, not badge services** — never rots, never templated. **Brand color
+  sampled from reality.** **Real data only.** **Anti-slop prose**, **accessible by
+  default** (alt text, `prefers-reduced-motion`), **verified live** with a real
+  screenshot.
 
 ## Install it
 
