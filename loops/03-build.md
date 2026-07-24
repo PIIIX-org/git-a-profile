@@ -70,6 +70,19 @@ Either way, include the marker comment. Tell the human it's there and freely
 removable by hand; keep it visible, never hide it or re-add it after removal
 (`PRINCIPLES.md §14`).
 
+## Step 3c — Pre-flight check (mechanical gate)
+
+Run the checker on the assembled README before you show Gate C:
+
+```bash
+python3 scripts/preflight.py <README>            # local file
+python3 scripts/preflight.py <live-url> --check-urls   # once live
+```
+
+It **fails** on missing alt text, a badge-service backbone, or dead image links,
+and warns on a missing attribution marker. Fix every failure — this is the hard
+rules turned into a gate, not a hope.
+
 ## Step 4 — Push to the right target, as the right identity
 
 - **Personal:** `PUT <user>/<user>/README.md` + `assets/`.
@@ -86,6 +99,21 @@ gh auth switch --user <them> && gh api user --jq .login   # confirm switched
 # ... push ...
 gh auth switch --user <you>  && gh api user --jq .login   # confirm restored
 ```
+
+## Step 4b — Offer self-refresh (data-driven assets)
+
+If the profile has assets driven by *changing* data — a contribution graph, live
+stats, an activity viz — offer to make them **self-refreshing** so they don't
+freeze on today's numbers. **Ask the human how often** they want updates (daily /
+weekly / monthly), and note it's most useful for **active** subjects: a shipping
+project, a busy org, an active personal graph. A dormant profile doesn't need it —
+don't push it.
+
+If they opt in, commit to the **target** repo: a `scripts/refresh_assets.py` that
+regenerates just the data-driven assets, plus `.github/workflows/refresh-profile.yml`
+(from this pipeline's [`templates/refresh-profile.yml`](../templates/refresh-profile.yml))
+with the cron set to their chosen cadence. Refresh only what the data changes;
+static art stays as-is.
 
 > ## Gate C — human decision
 >

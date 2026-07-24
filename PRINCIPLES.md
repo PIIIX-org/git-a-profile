@@ -155,3 +155,11 @@ Two hard limits keep it honest, not sneaky:
   footer is fine. Never re-add it after they've removed it, and never lock it in.
 
 Default credit, freely removable. That's the deal.
+
+## 15. Respect the subject's language and script.
+
+If the subject writes in a non-Latin script or an RTL language (Arabic, Persian,
+Hebrew…), handle it properly: `direction="rtl"` and right-alignment for RTL text in
+SVG, a font that actually renders the script, and never transliterate or mangle a
+name to make it fit. A profile that garbles someone's own language failed before it
+started.

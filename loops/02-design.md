@@ -58,6 +58,7 @@ to the first. Bring ideas, not one default.
 - **Mermaid diagrams** go straight in the README as fenced blocks — theme them to
   the palette where the renderer allows.
 - **Contrast:** white text on saturated fills, dark on light; body ≥ 4.5:1.
+- **RTL / non-Latin (`§15`):** set `direction="rtl"` and right-align RTL text; use a font that renders the script; never mangle a name to fit.
 
 ## Preview every asset
 

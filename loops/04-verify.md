@@ -30,6 +30,14 @@ No automation? Open it yourself and/or ask the human to confirm. **Look at it.**
 - **Contrast** is readable in both GitHub light and dark themes.
 - **Alt text** is present on every image (view source or your build notes).
 
+## Step 2b — Re-run the pre-flight check against the live page
+
+```bash
+python3 scripts/preflight.py <live-README-url> --check-urls
+```
+
+A green pre-flight plus a screenshot you've actually looked at is the bar.
+
 ## Step 3 — Fix and re-verify
 
 Anything wrong, fix in Loop 2/3 and screenshot again. Don't sign off on a

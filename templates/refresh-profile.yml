@@ -1,0 +1,40 @@
+# Self-refreshing profile assets.
+#
+# Copy this into YOUR profile repo at .github/workflows/refresh-profile.yml.
+# It re-runs the generator git-a-profile committed alongside your data-driven
+# assets (e.g. a contribution graph), so they stay current instead of freezing
+# on the day they were made.
+#
+# Set the cron to the cadence you chose. Most useful for ACTIVE subjects — a
+# shipping project, a busy org, an active personal graph. A dormant profile
+# doesn't need refreshing.
+name: refresh profile
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # <-- CADENCE: weekly (Mon 06:00 UTC). daily: '0 6 * * *' · monthly: '0 6 1 * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerate data-driven assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/refresh_assets.py   # <-- committed by git-a-profile for your profile
+      - name: Commit if anything changed
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: refresh profile assets [skip ci]"
+            git push
+          else
+            echo "nothing to refresh"
+          fi

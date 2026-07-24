@@ -72,10 +72,30 @@ going generic: **[`PRINCIPLES.md`](./PRINCIPLES.md)**
   charts when the repo has real structure, and lets you choose the style: plain
   text, code-rendered mermaid, or graphical animated SVG (via `dataviz` /
   `diagram-design`).
+- **It checks its own work.** A pre-flight gate (`scripts/preflight.py`) fails the
+  build on missing alt text, a badge-service backbone, or dead image links —
+  before it reaches you.
+- **It can stay current.** Opt in and your data-driven assets (contribution graph,
+  stats) self-refresh on a schedule you pick — no badge-service profile does that.
 - **Custom SVGs, not badge services** — never rots, never templated. **Brand color
   sampled from reality.** **Real data only.** **Anti-slop prose**, **accessible by
   default** (alt text, `prefers-reduced-motion`), **verified live** with a real
   screenshot.
+
+## Gallery
+
+Real profiles forged with this pipeline. **[Add yours →](./CONTRIBUTING.md)**
+
+<table>
+<tr>
+<td width="50%"><a href="https://github.com/PIIIX-org"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/piiix.png" alt="PIIIX org profile — an animated orbital system where the products orbit the PIIIX star"/></a><br><sub><b>PIIIX</b> · org · orbital system</sub></td>
+<td width="50%"><a href="https://github.com/CyborgTech-co"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/cyborg.png" alt="Cyborg Tech org profile — a glitch / cyberpunk header with chromatic aberration"/></a><br><sub><b>Cyborg Tech</b> · org · glitch / cyberpunk</sub></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Taha-Mahmoodi"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/taha.png" alt="Taha-Mahmoodi personal profile — a terminal header and a contribution star-timeline"/></a><br><sub><b>Taha-Mahmoodi</b> · personal · terminal + star-timeline</sub></td>
+<td><a href="https://github.com/sadeqisaidmohaddes-star"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/sadeq.png" alt="Said Mohaddes Sadeqi personal profile — an accessibility-first voice waveform"/></a><br><sub><b>Said Mohaddes Sadeqi</b> · personal · accessibility-first</sub></td>
+</tr>
+</table>
 
 ## Install it
 
@@ -113,6 +133,13 @@ keep it accessible, verify the live render, and commit a run report under runs/.
 Not on Claude Code? Point your agent at this repo and have it read
 [`loops/00-bootstrap.md`](./loops/00-bootstrap.md) first. Full instructions:
 **[`HOW_TO_RUN.md`](./HOW_TO_RUN.md)**.
+
+## Trust & contributing
+
+What it touches — and what it doesn't — is spelled out in
+**[`TRANSPARENCY.md`](./TRANSPARENCY.md)** (no telemetry, real data only, credit
+removable). Made a profile with it? **[Share your forge](./CONTRIBUTING.md)** — it
+joins the gallery and the count.
 
 ## Targets
 
