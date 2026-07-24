@@ -14,6 +14,8 @@ Skills (install via the plugin marketplace or the `find-skills` skill):
 | Remove AI writing tells | `stop-slop` |
 | Marketing copy | `copywriting`, `copy-editing`, `ogilvy` |
 | Screenshots / live QA | `browse` (or the claude-in-chrome tools) |
+| Charts / graphs | `dataviz` |
+| Diagrams | `diagram-design`, `diagram` |
 | Find & install more skills | `find-skills` |
 
 Built-in tools cover web research (`WebFetch`/`WebSearch`), shell, and file I/O.
@@ -34,7 +36,7 @@ install with `npm`/`pip`/your package manager:
 | Sample colors | Python `Pillow` · `imagemagick` |
 | Screenshot pages | `playwright` · `puppeteer` · headless Chrome |
 | Anti-slop writing | the checklist in `loops/03-build.md` |
-| Diagrams | native **mermaid** (no install) · `mermaid-cli` · a custom SVG chart · Claude `diagram-design` skill |
+| Charts / diagrams | native **mermaid** + markdown tables (no install) · `mermaid-cli` · custom SVG · Claude `dataviz` (charts) + `diagram-design` (diagrams) |
 
 ## Self-discovery
 

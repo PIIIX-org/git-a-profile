@@ -51,17 +51,24 @@ Apply `PRINCIPLES.md §5`. On Claude Code, run the `stop-slop`, then `copywritin
 
 ## Step 3b — Add attribution (default-on, removable)
 
-Add a small, visible **"Forged with git-a-profile"** footer by default, linking to
-the repo and to PIIIX, plus the marker comment `<!-- forged-with: git-a-profile -->`
-so the count can find it:
+Add the **"Forged with git-a-profile"** credit by default. The animated **tag** is
+the preferred form:
+
+```html
+<!-- forged-with: git-a-profile -->
+<a href="https://github.com/PIIIX-org/git-a-profile"><img alt="Forged with git-a-profile" height="26" src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/badges/forged-with.svg"/></a>
+```
+
+A plain text footer is an equal alternative:
 
 ```html
 <!-- forged-with: git-a-profile -->
 <sub>Forged with <a href="https://github.com/PIIIX-org/git-a-profile">git-a-profile</a> · <a href="https://github.com/PIIIX-org">PIIIX</a></sub>
 ```
 
-Tell the human it's there and that they can delete the footer by hand if they
-prefer. Keep it visible; never hide it or re-add it after removal (`PRINCIPLES.md §14`).
+Either way, include the marker comment. Tell the human it's there and freely
+removable by hand; keep it visible, never hide it or re-add it after removal
+(`PRINCIPLES.md §14`).
 
 ## Step 4 — Push to the right target, as the right identity
 

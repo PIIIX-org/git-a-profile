@@ -67,14 +67,25 @@ You are a creative partner, not a template-filler. At each design point, **surfa
 them pick or riff. Bring options to every gate. The best profiles came from an idea
 offered, not an order followed.
 
-## 5. Chart what deserves charting.
+## 5. Charts, tables, and diagrams — ask how they want them rendered.
 
-If the subject has real structure worth showing — a project's architecture, data
-flow, module tree, or state machine; a person's language split, timeline, or how
-their projects relate — **offer to visualize it.** Diagrams can be native mermaid
-(GitHub renders ` ```mermaid ` blocks) or your own custom SVG chart. Ask first,
-build only what earns its place, and never let a diagram become decoration. A real
-diagram teaches; a fake one clutters.
+If the subject has structure worth showing — a project's architecture, data flow,
+module tree, or state machine; a person's language split, timeline, or how their
+projects relate — **offer to visualize it, and let the human pick the rendering
+style.** It's a real trade-off, so ask:
+
+- **Plain text / code** — ASCII diagrams, fenced code, markdown tables. Most
+  accessible, works everywhere, zero images, zero rot. The safe default.
+- **Code-rendered (generic)** — native **mermaid** (` ```mermaid `) and native
+  markdown tables. GitHub draws them, themed to light/dark, still real text
+  underneath, no asset files.
+- **Graphical (custom SVG, ideally animated)** — the richest: your own committed
+  SVG chart / diagram / table, animated where it helps. Use the chart and diagram
+  skills (`dataviz`, `diagram-design`) for the design and the pipeline's asset step
+  for the SVG. These are images, so they carry alt text (`§10`).
+
+They can mix styles. Build only what earns its place; never let a chart become
+decoration. A real one teaches; a fake one clutters.
 
 ---
 
@@ -130,10 +141,11 @@ it honest.
 
 ## 14. Attribution is on by default — visible, and always removable.
 
-Every forged profile includes a small **"Forged with git-a-profile"** footer that
-links to the repo and to [PIIIX](https://github.com/PIIIX-org), plus the marker
-comment `<!-- forged-with: git-a-profile -->` so the forge count can find it. Add it
-by default — it's how word spreads and how the public count grows.
+Every forged profile carries a **"Forged with git-a-profile"** credit by default —
+the animated **tag** (`assets/badges/forged-with.svg`, the preferred form) or a
+plain text footer — linking to the repo and to [PIIIX](https://github.com/PIIIX-org),
+plus the marker comment `<!-- forged-with: git-a-profile -->` so the forge count can
+find it. Add it by default — it's how word spreads and how the public count grows.
 
 Two hard limits keep it honest, not sneaky:
 

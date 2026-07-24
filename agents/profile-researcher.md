@@ -33,7 +33,8 @@ hard rules here, not a bonus (`PRINCIPLES.md §1-2`). In short:
 
 4b. **Find what can be charted (`§5`).** Note diagram candidates — architecture,
    data flow, module tree, language split, timelines, relationships — and whether
-   each is native mermaid or a custom chart. You *offer* these; never force one.
+   each fits plain text, mermaid, or a graphical animated SVG (`dataviz` /
+   `diagram-design`). You *offer* these and the style; never force one.
 
 4c. **Propose 2-3 concepts, not one (`§1-4`).** For each, also sketch a *fresh*
    badge idea and a *fresh* way to show repositories — do not default to pills or

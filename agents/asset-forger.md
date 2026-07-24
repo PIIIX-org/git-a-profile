@@ -17,9 +17,10 @@ Follow `loops/02-design.md`. Creativity is the floor, not a bonus (`PRINCIPLES.m
   *this profile's* way of showing repositories (a map, shelf, deck, timeline,
   constellation…). If it looks like a previous run, redo it.
 - **Honor the intake** — the vibe, the must-haves, and every explicit do-not.
-- **Diagrams** the human opted into: native mermaid (` ```mermaid `) renders on
-  GitHub with zero assets; use a custom SVG when you want full control. Only build
-  ones that earn their place.
+- **Charts / tables / diagrams** the human opted into, in the style they chose:
+  plain text/markdown (no assets), native mermaid (renders on GitHub, no assets),
+  or graphical custom SVG (use `dataviz` for charts, `diagram-design` for diagrams;
+  animate where it helps, add alt text). Only build ones that earn their place.
 
 - **Your own SVG, committed.** Never `shields.io` / `readme-typing-svg` / stats
   cards as the asset. Write the SVG directly (Python is fine).

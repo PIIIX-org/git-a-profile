@@ -51,15 +51,17 @@ with the vibe from Step 0.
 
 ## Step 3 — Look for what can be charted (`PRINCIPLES.md §5`)
 
-Scan for real structure worth a diagram, and note candidates:
+Scan for real structure worth a diagram/chart/table, and note candidates:
 
 - **Project:** architecture, data flow, module/dependency tree, state machine, API
   or request flow, ER/data model.
 - **Person / org:** language distribution, contribution timeline, how projects
   relate, a tech-stack map.
 
-For each candidate, note what it would show and whether it's native **mermaid** or a
-custom SVG chart. You'll *offer* these at Gate A — never force one in.
+For each candidate, note what it would show. Also decide the **rendering style** to
+propose at Gate A (`§5`): plain text/code, code-rendered (mermaid / markdown table),
+or graphical (custom animated SVG via `dataviz` / `diagram-design`). You'll *offer*
+these — the human picks style, or opts out.
 
 ## Step 4 — Find the throughline, then invent concepts
 
@@ -84,6 +86,7 @@ concepts with their component ideas.
 > ## Gate A — human decision
 >
 > Present: **the vibe you captured, the palette, 2–3 concept options (each with a
-> fresh badge idea and repo-visualization idea), and the diagram candidates.** Let
-> the human choose a concept, opt diagrams in or out, and adjust. Bring options,
+> fresh badge idea and repo-visualization idea), the diagram/chart/table candidates,
+> and the rendering-style choice (text / mermaid / graphical SVG).** Let the human
+> choose a concept, pick the render style, opt diagrams in or out, and adjust. Bring options,
 > not one answer (`PRINCIPLES.md §4`). Do not proceed without their pick.

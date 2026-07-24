@@ -32,7 +32,7 @@ install it, else use the fallback.
 | 6 | **Sample colors from an image** | Pull brand color from a logo/screenshot |
 | 7 | **Screenshot a live web page** | Verify the rendered GitHub page |
 | 8 | **Anti-slop writing guidance** | Keep the prose human (see `PRINCIPLES.md`) |
-| 9 | **Diagram rendering (optional)** | Turn repo structure into charts — native mermaid needs nothing; a custom chart needs an SVG renderer |
+| 9 | **Charts / diagrams (optional)** | Native mermaid + markdown tables need nothing; graphical output uses chart/diagram skills (`dataviz`, `diagram-design`) + an SVG renderer |
 
 ## Step 3 — Self-discovery: find and install what you're missing
 
@@ -43,7 +43,8 @@ the pipeline portable.
 - **Claude Code:** use the `find-skills` skill (or the plugin marketplace) to
   search for and install skills. The ones this pipeline was built with:
   `impeccable` (design), `stop-slop` + `copywriting` + `ogilvy` (prose),
-  `browse` (screenshots). Also check the MCP registry for servers you need.
+  `browse` (screenshots), `dataviz` (charts), `diagram-design` / `diagram`
+  (diagrams). Also check the MCP registry for servers you need.
 - **Codex / Cursor / Aider / other:** search your extension/tool marketplace,
   MCP server registry, or npm/pip for equivalents:
   - screenshots → `playwright`, `puppeteer`, or headless Chrome
@@ -52,7 +53,7 @@ the pipeline portable.
   - research → your built-in web tool, or `curl` + a search API
 - **Any agent:** if your platform has a skill/tool/plugin search, run it now with
   queries like "svg render", "screenshot web page", "github stats", "web
-  research", and install the best matches. Prefer official/verified sources;
+  research", "chart / data visualization", "diagram", and install the best matches. Prefer official/verified sources;
   read what a tool does before installing it.
 
 ## Step 4 — Fallbacks (when you can't install)

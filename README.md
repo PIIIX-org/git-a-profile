@@ -68,8 +68,10 @@ going generic: **[`PRINCIPLES.md`](./PRINCIPLES.md)**
   previous profile, the pipeline makes it redo it.
 - **It proposes, doesn't just execute.** Options at every gate; ideas you didn't
   request.
-- **It charts what deserves charting** — offers architecture / flow / data diagrams
-  (native mermaid or custom SVG) when the repo has real structure.
+- **It charts what deserves charting — your way.** Offers diagrams, tables, and
+  charts when the repo has real structure, and lets you choose the style: plain
+  text, code-rendered mermaid, or graphical animated SVG (via `dataviz` /
+  `diagram-design`).
 - **Custom SVGs, not badge services** — never rots, never templated. **Brand color
   sampled from reality.** **Real data only.** **Anti-slop prose**, **accessible by
   default** (alt text, `prefers-reduced-motion`), **verified live** with a real
@@ -123,6 +125,6 @@ Not on Claude Code? Point your agent at this repo and have it read
 ---
 
 <!-- forged-with: git-a-profile -->
-<sub>This README was forged by the pipeline it describes — banner, badges, and copy
-built and verified through Loops 1–4. First run logged in [`runs/git-a-profile`](./runs/git-a-profile).
-Forged with <a href="https://github.com/PIIIX-org/git-a-profile">git-a-profile</a> · <a href="https://github.com/PIIIX-org">PIIIX</a></sub>
+<a href="https://github.com/PIIIX-org/git-a-profile"><img alt="Forged with git-a-profile" height="26" src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/badges/forged-with.svg"/></a>
+
+<sub>This README was forged by the pipeline it describes — banner, badges, and copy built and verified through Loops 1–4. First run in [`runs/git-a-profile`](./runs/git-a-profile). Made by <a href="https://github.com/PIIIX-org">PIIIX</a>.</sub>

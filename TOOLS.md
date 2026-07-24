@@ -34,7 +34,7 @@ substitute for the others in its group.
 - **Native mermaid** — GitHub renders ` ```mermaid ` fenced blocks with zero assets. First choice for architecture / flow / sequence / ER / state.
 - **`mermaid-cli` (`mmdc`)** — render mermaid to SVG/PNG when you want a file.
 - **Custom SVG chart** — write it yourself for full control of look and motion.
-- Claude Code: the `diagram-design` / `diagram` skills.
+- Claude Code: `dataviz` (charts/graphs, can emit inline SVG) and `diagram-design` / `diagram` (diagrams).
 
 ## Writing quality
 - Claude Code: `stop-slop`, `copywriting`, `copy-editing`, `ogilvy`.

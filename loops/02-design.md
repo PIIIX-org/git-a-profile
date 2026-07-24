@@ -31,9 +31,13 @@ Build these in the approved palette and vibe, in a consistent type system:
    constellation…).
 4. **Activity / showcase viz** — real data (person) or real showcase (org/project),
    reimagined per the concept.
-5. **Diagrams the human opted into** — architecture, data flow, module tree, etc.
-   Native mermaid (` ```mermaid `) renders on GitHub with zero assets; use a custom
-   SVG when you want full control. Only build ones that earn their place.
+5. **Diagrams / charts / tables the human opted into**, in the style they chose (`§5`):
+   - **Plain text / code** — ASCII, fenced blocks, markdown tables. No assets.
+   - **Code-rendered** — native mermaid (` ```mermaid `) and markdown tables. No assets.
+   - **Graphical** — your own committed SVG, animated where it helps. Use the
+     `dataviz` skill for chart design and `diagram-design` for diagrams; render the
+     final as an SVG through the asset step. Alt text required.
+   Only build ones that earn their place.
 6. **Footer** — a closing note that echoes the hero.
 
 ## Before you build each — offer options (`PRINCIPLES.md §4`)

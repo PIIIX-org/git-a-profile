@@ -19,7 +19,7 @@ step, not just at the start:
 - **§2 Think out of the box** — the floor, not the ceiling.
 - **§3 Reinvent every component** — never reuse the example badge or repo-tree; invent this subject's own.
 - **§4 Offer ideas** — bring 2–3 out-of-the-box options to every gate; propose things they didn't ask for.
-- **§5 Chart what deserves it** — offer diagrams when the repo has real structure.
+- **§5 Charts/tables/diagrams your way** — offer them when the repo has real structure, and let the human pick the style: plain text, mermaid, or graphical animated SVG (`dataviz` / `diagram-design`).
 
 The loop files are in [`../../loops/`](../../loops).
 
