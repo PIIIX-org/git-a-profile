@@ -49,12 +49,19 @@ Apply `PRINCIPLES.md §5`. On Claude Code, run the `stop-slop`, then `copywritin
 - Confirm animated assets carry the reduced-motion gate from Loop 2.
 - Links say where they go — no "click here."
 
-## Step 3b — Offer attribution (opt-in)
+## Step 3b — Add attribution (default-on, removable)
 
-Ask the human if they'd like a small **"Forged with git-a-profile"** footer link on
-their profile. If yes, add the visible link plus the marker comment
-`<!-- forged-with: git-a-profile -->`. If no, add nothing (`PRINCIPLES.md §14`).
-Their choice; never force it.
+Add a small, visible **"Forged with git-a-profile"** footer by default, linking to
+the repo and to PIIIX, plus the marker comment `<!-- forged-with: git-a-profile -->`
+so the count can find it:
+
+```html
+<!-- forged-with: git-a-profile -->
+<sub>Forged with <a href="https://github.com/PIIIX-org/git-a-profile">git-a-profile</a> · <a href="https://github.com/PIIIX-org">PIIIX</a></sub>
+```
+
+Tell the human it's there and that they can delete the footer by hand if they
+prefer. Keep it visible; never hide it or re-add it after removal (`PRINCIPLES.md §14`).
 
 ## Step 4 — Push to the right target, as the right identity
 

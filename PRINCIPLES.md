@@ -128,10 +128,18 @@ Gate A (intent + concept), Gate B (visual direction), Gate C (final before push)
 Stop and get a human decision at each. The pipeline is fast; the gates are what keep
 it honest.
 
-## 14. Credit is opt-in, never forced.
+## 14. Attribution is on by default — visible, and always removable.
 
-You may *offer* the human a small "Forged with git-a-profile" footer link on the
-result — it's how word spreads, and how the repo's public forge count grows. But
-it is their profile: never add attribution they didn't accept. If they opt in,
-include the visible link and the marker comment `<!-- forged-with: git-a-profile -->`
-so the count can find it; if they decline, add nothing.
+Every forged profile includes a small **"Forged with git-a-profile"** footer that
+links to the repo and to [PIIIX](https://github.com/PIIIX-org), plus the marker
+comment `<!-- forged-with: git-a-profile -->` so the forge count can find it. Add it
+by default — it's how word spreads and how the public count grows.
+
+Two hard limits keep it honest, not sneaky:
+
+- **It stays visible.** Never hide it, shrink it to nothing, obfuscate it, or bury
+  it in a comment only. It's a plain, readable footer line.
+- **The human can delete it by hand.** Tell them it's there and that removing the
+  footer is fine. Never re-add it after they've removed it, and never lock it in.
+
+Default credit, freely removable. That's the deal.

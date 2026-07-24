@@ -47,8 +47,9 @@ free image host went down. That's templating. This is the opposite.
 
 <sub>The **profiles forged** badge is self-updating: a GitHub Action recounts the
 [`runs/`](./runs) reports and regenerates the badge — no external service. It's an
-honest lower bound (documented forges, plus anyone who opted into the "Forged with
-git-a-profile" credit); running the pipeline locally leaves no trace to count.</sub>
+honest lower bound: documented forges, plus profiles that keep the default "Forged
+with git-a-profile" footer. Running the pipeline locally leaves no trace to count,
+and the footer is freely removable, so the real number runs higher.</sub>
 
 Full write-up: **[`PIPELINE.md`](./PIPELINE.md)** · The rules that keep it from
 going generic: **[`PRINCIPLES.md`](./PRINCIPLES.md)**
@@ -121,5 +122,7 @@ Not on Claude Code? Point your agent at this repo and have it read
 
 ---
 
+<!-- forged-with: git-a-profile -->
 <sub>This README was forged by the pipeline it describes — banner, badges, and copy
-built and verified through Loops 1–4. First run logged in [`runs/git-a-profile`](./runs/git-a-profile). Made by <a href="https://github.com/PIIIX-org">PIIIX</a>.</sub>
+built and verified through Loops 1–4. First run logged in [`runs/git-a-profile`](./runs/git-a-profile).
+Forged with <a href="https://github.com/PIIIX-org/git-a-profile">git-a-profile</a> · <a href="https://github.com/PIIIX-org">PIIIX</a></sub>
