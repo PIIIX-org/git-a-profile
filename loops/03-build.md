@@ -49,6 +49,13 @@ Apply `PRINCIPLES.md §5`. On Claude Code, run the `stop-slop`, then `copywritin
 - Confirm animated assets carry the reduced-motion gate from Loop 2.
 - Links say where they go — no "click here."
 
+## Step 3b — Offer attribution (opt-in)
+
+Ask the human if they'd like a small **"Forged with git-a-profile"** footer link on
+their profile. If yes, add the visible link plus the marker comment
+`<!-- forged-with: git-a-profile -->`. If no, add nothing (`PRINCIPLES.md §14`).
+Their choice; never force it.
+
 ## Step 4 — Push to the right target, as the right identity
 
 - **Personal:** `PUT <user>/<user>/README.md` + `assets/`.

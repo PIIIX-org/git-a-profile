@@ -1,0 +1,33 @@
+name: forge count
+
+# Self-updating "profiles forged" badge. Counts documented runs (runs/*/),
+# regenerates assets/badges/forges.svg, and commits it back. No external service.
+on:
+  push:
+    paths:
+      - 'runs/**'
+  schedule:
+    - cron: '17 6 * * *'   # daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerate the forges badge
+        run: python3 scripts/forge_badge.py
+      - name: Commit if the count changed
+        run: |
+          if [ -n "$(git status --porcelain assets/badges/forges.svg)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/badges/forges.svg
+            git commit -m "chore: update forges count [skip ci]"
+            git push
+          else
+            echo "forges count unchanged"
+          fi

@@ -4,6 +4,7 @@
 
 <br>
 
+[![Profiles forged](https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/badges/forges.svg)](./runs)
 [![License: MIT](https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/badges/license.svg)](./LICENSE)
 [![Loops 0 to 4](https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/badges/loops.svg)](./PIPELINE.md)
 [![Human gates A B C](https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/badges/gates.svg)](./PRINCIPLES.md)
@@ -43,6 +44,11 @@ free image host went down. That's templating. This is the opposite.
 | **2** | [Design](./loops/02-design.md) | The custom asset kit: hero, badges, activity viz, footer (all your own SVG) | **Gate B** |
 | **3** | [Build](./loops/03-build.md) | The assembled README, pushed to the target | **Gate C** |
 | **4** | [Verify](./loops/04-verify.md) | Live screenshot + a run report under [`runs/`](./runs) | Report committed |
+
+<sub>The **profiles forged** badge is self-updating: a GitHub Action recounts the
+[`runs/`](./runs) reports and regenerates the badge — no external service. It's an
+honest lower bound (documented forges, plus anyone who opted into the "Forged with
+git-a-profile" credit); running the pipeline locally leaves no trace to count.</sub>
 
 Full write-up: **[`PIPELINE.md`](./PIPELINE.md)** · The rules that keep it from
 going generic: **[`PRINCIPLES.md`](./PRINCIPLES.md)**

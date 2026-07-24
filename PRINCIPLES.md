@@ -127,3 +127,11 @@ then switch back. Never cross-contaminate accounts.
 Gate A (intent + concept), Gate B (visual direction), Gate C (final before push).
 Stop and get a human decision at each. The pipeline is fast; the gates are what keep
 it honest.
+
+## 14. Credit is opt-in, never forced.
+
+You may *offer* the human a small "Forged with git-a-profile" footer link on the
+result — it's how word spreads, and how the repo's public forge count grows. But
+it is their profile: never add attribution they didn't accept. If they opt in,
+include the visible link and the marker comment `<!-- forged-with: git-a-profile -->`
+so the count can find it; if they decline, add nothing.
