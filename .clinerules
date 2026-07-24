@@ -1,0 +1,7 @@
+# git-a-profile
+
+This repo is the git-a-profile pipeline: forge a one-of-a-kind GitHub profile, org,
+or project README. To run it, read AGENTS.md and PRINCIPLES.md, then work
+loops/00-bootstrap.md → loops/04-verify.md in order, stopping at Gates A, B, and C
+for the human. Custom committed SVGs only, one unique signature per subject,
+brand color sampled from reality, real data, accessible by default, verified live.

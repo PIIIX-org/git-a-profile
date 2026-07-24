@@ -1,0 +1,6 @@
+{
+  "name": "git-a-profile",
+  "version": "1.0.0",
+  "description": "Forge a one-of-a-kind GitHub profile, org, or project README. Research -> design -> build -> verify, with human gates.",
+  "contextFileName": "AGENTS.md"
+}

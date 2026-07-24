@@ -1,0 +1,11 @@
+{
+  "name": "git-a-profile",
+  "version": "1.0.0",
+  "description": "Forge a one-of-a-kind GitHub profile, org, or project README. A research -> design -> build -> verify pipeline with human gates and custom SVG art. No templated badge-soup.",
+  "author": {
+    "name": "PIIIX",
+    "url": "https://github.com/PIIIX-org"
+  },
+  "homepage": "https://github.com/PIIIX-org/git-a-profile",
+  "repository": "https://github.com/PIIIX-org/git-a-profile"
+}

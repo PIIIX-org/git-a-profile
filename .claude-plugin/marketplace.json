@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "git-a-profile",
+  "description": "Forge one-of-a-kind GitHub READMEs — research, design, build, verify, with human gates. No templates.",
+  "owner": {
+    "name": "PIIIX",
+    "url": "https://github.com/PIIIX-org"
+  },
+  "plugins": [
+    {
+      "name": "git-a-profile",
+      "description": "Pipeline + skill + worker agents to forge a unique GitHub profile, org, or project README.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

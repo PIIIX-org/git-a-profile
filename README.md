@@ -59,12 +59,28 @@ going generic: **[`PRINCIPLES.md`](./PRINCIPLES.md)**
 - **Anti-slop prose**, **accessible by default** (alt text, `prefers-reduced-motion`),
   and **verified live** with a real screenshot.
 
+## Install it
+
+On **Claude Code**, install the full plugin — the conductor skill, three worker
+agents, and the `/git-a-profile` command:
+
+```
+/plugin marketplace add PIIIX-org/git-a-profile
+/plugin install git-a-profile
+```
+
+Then `/git-a-profile <handle>`. The skill runs the loops and holds the gates; the
+worker agents (`profile-researcher`, `asset-forger`, `render-verifier`) do the
+parallel labor between them — never the decisions.
+
 ## Works on any agent
 
-Built and tested on Claude Code, but the loops are plain instructions. Codex,
-Cursor, Aider, Gemini CLI, and others can run them too — [Loop 0](./loops/00-bootstrap.md)
-actively searches your platform for the capabilities it needs, installs what it
-can, and falls back gracefully for the rest. See [`INSTALL.md`](./INSTALL.md) and
+The loops are plain instructions, and every platform gets a thin adapter that
+points at them — nothing is duplicated. Codex (`AGENTS.md`), Cursor, Gemini CLI,
+Copilot, Windsurf, Cline, OpenCode, Aider, and more are covered; the universal
+entry is [`AGENTS.md`](./AGENTS.md). [Loop 0](./loops/00-bootstrap.md) makes your
+agent find and install the tools it's missing, and fall back where it can't. Full
+map: **[`PLATFORMS.md`](./PLATFORMS.md)** · tooling: [`INSTALL.md`](./INSTALL.md),
 [`TOOLS.md`](./TOOLS.md).
 
 ## Run it

@@ -1,0 +1,8 @@
+# git-a-profile
+
+This repo is the git-a-profile pipeline for forging one-of-a-kind GitHub READMEs.
+To run it, read AGENTS.md and PRINCIPLES.md, then execute loops/00-bootstrap.md
+through loops/04-verify.md in order, stopping at the three human gates. Build every
+asset as a custom committed SVG (no badge services), sample the brand color from
+the subject's real logo, use real data, keep it accessible, and verify the live
+render with a screenshot.
