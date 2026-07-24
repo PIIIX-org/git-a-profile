@@ -48,13 +48,17 @@ def main():
     imgs = find_images(md)
     fails, warns, oks = [], [], []
 
-    # 1. alt text on every image
-    missing = [s for (s, a) in imgs if a is None or a.strip() == ""]
+    # 1. alt text on every image.
+    # Absent `alt` attribute = FAIL. Empty `alt=""` is valid — it marks an image as
+    # decorative so screen readers skip it — so it passes (noted separately).
+    missing = [s for (s, a) in imgs if a is None]
+    decorative = [s for (s, a) in imgs if a is not None and a.strip() == ""]
     if missing:
-        fails.append(f"{len(missing)} image(s) missing alt text: " +
+        fails.append(f"{len(missing)} image(s) with no alt attribute: " +
                      ", ".join(os.path.basename(s) for s in missing[:5]))
     else:
-        oks.append(f"alt text present on all {len(imgs)} images")
+        oks.append(f"alt attribute present on all {len(imgs)} images"
+                   + (f" ({len(decorative)} marked decorative)" if decorative else ""))
 
     # 2. badge services as the backbone
     hits = [(s, svc) for (s, _) in imgs for svc in BADGE_SERVICES if svc in s]
