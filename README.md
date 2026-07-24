@@ -95,6 +95,10 @@ Real profiles forged with this pipeline. **[Add yours →](./CONTRIBUTING.md)**
 <td><a href="https://github.com/Taha-Mahmoodi"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/taha.png" alt="Taha-Mahmoodi personal profile — a terminal header and a contribution star-timeline"/></a><br><sub><b>Taha-Mahmoodi</b> · personal · terminal + star-timeline</sub></td>
 <td><a href="https://github.com/sadeqisaidmohaddes-star"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/sadeq.png" alt="Said Mohaddes Sadeqi personal profile — an accessibility-first voice waveform"/></a><br><sub><b>Said Mohaddes Sadeqi</b> · personal · accessibility-first</sub></td>
 </tr>
+<tr>
+<td><a href="https://github.com/PIIIX-org/website-pitch-pipeline"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/pitch.png" alt="website-pitch-pipeline project README — a cyanotype blueprint hero on a planning table, stamped CHECKED: HUMAN"/></a><br><sub><b>website-pitch-pipeline</b> · project · blueprint drawing set</sub></td>
+<td></td>
+</tr>
 </table>
 
 ## Install it
