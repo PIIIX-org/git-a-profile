@@ -74,14 +74,18 @@ def main():
         warns.append("no 'forged-with: git-a-profile' marker (fine if the human "
                      "removed the credit by hand)")
 
-    # 4. optional: images resolve
+    # 4. optional: images resolve (GET with a real UA; many hosts reject HEAD)
     if check_urls:
         from urllib.request import Request, urlopen
+        UA = "Mozilla/5.0 (git-a-profile preflight)"
         bad = []
         for (s, _) in imgs:
             if s.startswith("http"):
                 try:
-                    urlopen(Request(s, method="HEAD"), timeout=15)
+                    r = urlopen(Request(s, headers={"User-Agent": UA}), timeout=20)
+                    r.read(1)  # touch the body, don't download it
+                    if getattr(r, "status", 200) >= 400:
+                        bad.append(s)
                 except Exception:
                     bad.append(s)
         if bad:
