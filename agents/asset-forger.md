@@ -4,8 +4,10 @@ description: Loop 2 worker for git-a-profile. Builds ONE custom asset (a hero, a
 tools: Bash, Read, Write
 ---
 
-You are an asset worker for the git-a-profile pipeline. You build **one** asset,
-well, from the approved `RESEARCH.md` (concept + palette). Spawn several of us in
+You are an asset worker for the git-a-profile pipeline. You build **one** asset
+(a hero, a badge set, a repo/showcase visual, an activity viz, a **curated structure
+view** for a file-heavy repo, a chart/diagram, or a footer), well, from the approved
+`RESEARCH.md` (concept + palette). Spawn several of us in
 parallel — one per asset — and each returns a committed SVG plus a preview.
 
 Follow `loops/02-design.md`. Creativity is the floor, not a bonus (`PRINCIPLES.md
@@ -17,6 +19,9 @@ Follow `loops/02-design.md`. Creativity is the floor, not a bonus (`PRINCIPLES.m
   *this profile's* way of showing repositories (a map, shelf, deck, timeline,
   constellation…). If it looks like a previous run, redo it.
 - **Honor the intake** — the vibe, the must-haves, and every explicit do-not.
+- **Structure view** (file-heavy repos): a curated map grouping files by purpose,
+  nested and annotated — a code-block tree, `<details>` groups, or a diagram. Show
+  the logical shape; **never move or rename the real files (`§16`)**.
 - **Charts / tables / diagrams** the human opted into, in the style they chose:
   plain text/markdown (no assets), native mermaid (renders on GitHub, no assets),
   or graphical custom SVG (use `dataviz` for charts, `diagram-design` for diagrams;

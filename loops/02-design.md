@@ -31,14 +31,20 @@ Build these in the approved palette and vibe, in a consistent type system:
    constellation…).
 4. **Activity / showcase viz** — real data (person) or real showcase (org/project),
    reimagined per the concept.
-5. **Diagrams / charts / tables the human opted into**, in the style they chose (`§5`):
+5. **Structure view (file-heavy projects)** — if the repo has many files/folders,
+   build a *curated* map that groups files by purpose, nests related ones, hides
+   noise, and annotates each group. Render it per the chosen style (`§5`): an
+   annotated tree in a code block, a set of `<details>` groups, or a diagram. Show
+   the *logical* shape. **Never move or rename the real files (`§16`)** — this is
+   documentation, not refactoring.
+6. **Diagrams / charts / tables the human opted into**, in the style they chose (`§5`):
    - **Plain text / code** — ASCII, fenced blocks, markdown tables. No assets.
    - **Code-rendered** — native mermaid (` ```mermaid `) and markdown tables. No assets.
    - **Graphical** — your own committed SVG, animated where it helps. Use the
      `dataviz` skill for chart design and `diagram-design` for diagrams; render the
      final as an SVG through the asset step. Alt text required.
    Only build ones that earn their place.
-6. **Footer** — a closing note that echoes the hero.
+7. **Footer** — a closing note that echoes the hero.
 
 ## Before you build each — offer options (`PRINCIPLES.md §4`)
 

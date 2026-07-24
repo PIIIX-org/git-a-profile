@@ -20,6 +20,7 @@ step, not just at the start:
 - **§3 Reinvent every component** — never reuse the example badge or repo-tree; invent this subject's own.
 - **§4 Offer ideas** — bring 2–3 out-of-the-box options to every gate; propose things they didn't ask for.
 - **§5 Charts/tables/diagrams your way** — offer them when the repo has real structure, and let the human pick the style: plain text, mermaid, or graphical animated SVG (`dataviz` / `diagram-design`).
+- **§16 Curate the structure of file-heavy repos** — a grouped, nested, annotated map in the README. Reorganize the *story*, never the files.
 
 The loop files are in [`../../loops/`](../../loops).
 

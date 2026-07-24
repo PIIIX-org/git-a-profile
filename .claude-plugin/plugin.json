@@ -1,6 +1,6 @@
 {
   "name": "git-a-profile",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Forge a one-of-a-kind GitHub profile, org, or project README. A research -> design -> build -> verify pipeline with human gates and custom SVG art. No templated badge-soup.",
   "author": {
     "name": "PIIIX",

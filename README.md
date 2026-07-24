@@ -134,6 +134,34 @@ Not on Claude Code? Point your agent at this repo and have it read
 [`loops/00-bootstrap.md`](./loops/00-bootstrap.md) first. Full instructions:
 **[`HOW_TO_RUN.md`](./HOW_TO_RUN.md)**.
 
+## How this repo is laid out
+
+Curated by purpose, not dumped as a file list — the same move the pipeline makes for
+any file-heavy repo (`PRINCIPLES.md §16`). Nothing here was renamed to look tidy;
+this is the *story* of the tree, not the tree.
+
+```text
+git-a-profile/
+├─ the method ─────────── what the agent actually runs
+│  ├─ loops/00–04         bootstrap → research → design → build → verify
+│  ├─ PIPELINE.md         full write-up
+│  └─ PRINCIPLES.md       the hard rules (intake, creativity, a11y, §16…)
+├─ run it ─────────────── entry points, one per platform
+│  ├─ README · HOW_TO_RUN · AGENTS.md · CLAUDE.md
+│  └─ PLATFORMS.md        Codex · Cursor · Gemini · Copilot · Windsurf · Cline · OpenCode
+├─ the Claude plugin ─── skill + worker agents + command
+│  ├─ skills/ · agents/ · commands/
+│  └─ .claude-plugin/     manifest + marketplace
+├─ automation ─────────── scripts and the self-updating badge
+│  ├─ scripts/            preflight.py · forge_badge.py
+│  ├─ templates/          self-refresh workflow you drop into your repo
+│  └─ .github/workflows/  the forge counter
+├─ the forge log ──────── proof it works, and social proof
+│  ├─ runs/               one report per forge
+│  └─ assets/             banner · badges · gallery
+└─ meta ───────────────── CONTRIBUTING · TRANSPARENCY · TOOLS · INSTALL · LICENSE
+```
+
 ## Trust & contributing
 
 What it touches — and what it doesn't — is spelled out in

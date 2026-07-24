@@ -57,6 +57,8 @@ Scan for real structure worth a diagram/chart/table, and note candidates:
   or request flow, ER/data model.
 - **Person / org:** language distribution, contribution timeline, how projects
   relate, a tech-stack map.
+- **File-heavy project:** a **structure view** — a curated, grouped map of the
+  codebase so it reads as organized and navigable (`§16`).
 
 For each candidate, note what it would show. Also decide the **rendering style** to
 propose at Gate A (`§5`): plain text/code, code-rendered (mermaid / markdown table),

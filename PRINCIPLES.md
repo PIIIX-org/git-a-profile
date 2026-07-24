@@ -163,3 +163,16 @@ Hebrew…), handle it properly: `direction="rtl"` and right-alignment for RTL te
 SVG, a font that actually renders the script, and never transliterate or mangle a
 name to make it fit. A profile that garbles someone's own language failed before it
 started.
+
+## 16. For file-heavy repos, curate the structure — don't dump the tree.
+
+When a project has many files and folders, a raw `ls -R` in the README helps no one.
+Present a **curated map**: group files by *purpose*, nest the related ones, hide the
+noise, and annotate what each group is for. Show the repo's *logical* shape, not its
+literal one.
+
+Hard boundary: **never move or rename the actual files to make the tree prettier.**
+That breaks builds, links, CI, and conventions (`.github/workflows/`, root
+`README`/`LICENSE`/manifests, framework layouts). You reorganize the *story* of the
+repo in the README — not the filesystem. git-a-profile writes presentation; it does
+not restructure code.
