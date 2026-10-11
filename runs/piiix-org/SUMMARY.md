@@ -1,3 +1,1 @@
-# piiix-org — one-line summary
-
-org · PIIIX-org · concept: Animated orbital system — the three products orbit the PIIIX star, rendering the brand's meaning (Planet III of star X). · accent `#6C63FF` · forged 2026-07 · live: https://github.com/PIIIX-org
+**PIIIX-org** · org · 2026-10-11 · the real system: orange star, bodies sized by commits, Vectory as a parked comet, ephemeris rows and a light curve, all regenerated from the API by `profile/forge.py`.
