@@ -88,7 +88,7 @@ Real profiles forged with this pipeline. **[Add yours →](./CONTRIBUTING.md)**
 
 <table>
 <tr>
-<td width="50%"><a href="https://github.com/PIIIX-org"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/piiix.png" alt="PIIIX org profile — an animated orbital system where the products orbit the PIIIX star"/></a><br><sub><b>PIIIX</b> · org · orbital system</sub></td>
+<td width="50%"><a href="https://github.com/PIIIX-org"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/piiix.png" alt="PIIIX org profile — an orange star with the products as planets sized by commits, Vectory parked as a comet"/></a><br><sub><b>PIIIX</b> · org · the real system</sub></td>
 <td width="50%"><a href="https://github.com/CyborgTech-co"><img src="https://raw.githubusercontent.com/PIIIX-org/git-a-profile/main/assets/gallery/cyborg.png" alt="Cyborg Tech org profile — a glitch / cyberpunk header with chromatic aberration"/></a><br><sub><b>Cyborg Tech</b> · org · glitch / cyberpunk</sub></td>
 </tr>
 <tr>
